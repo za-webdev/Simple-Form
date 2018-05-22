@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style>
+		.main{
+			margin-left:40%;
+			margin-top: 10%;
+
+		}
+		h1{
+			padding-left: 40%;
+			margin-top: 5%;
+			font-size: 50px;
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<h1>Survey Form</h1>
+	<div class="main">
+		<form action="/process" method="post">
+				<table>
+						<tr>
+							<td><label>Name:</label>
+							<input type="text" id="name" name="name" class="form-control">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label> Dojo Location:</label>
+								<select name='location' class="custom-select" id="inputGroupSelect01">
+									<option selected>Chose</option>
+									<option value="DC">DC</option>
+									<option value="San Jose">San Jose</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label> Language:</label>
+								<select name='language' class="custom-select" id="inputGroupSelect01">
+									<option selected>Choose</option>
+									<option value="C#">C#</option>
+									<option value="Python">Python</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Comment:</label>
+								<textarea name="comment" class="form-control" aria-label="With textarea"></textarea>
+							</td>
+						</tr>
+						
+				</table>
+							<input type="submit" value="submit" class="btn btn-primary">
+		</form>
+	</div>
+</body>
+</html>
